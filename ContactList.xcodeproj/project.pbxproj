@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		128FD5A229336980008032DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5A129336980008032DD /* AppDelegate.swift */; };
 		128FD5A429336980008032DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5A329336980008032DD /* SceneDelegate.swift */; };
-		128FD5A629336980008032DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5A529336980008032DD /* ViewController.swift */; };
 		128FD5A929336980008032DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128FD5A729336980008032DD /* Main.storyboard */; };
 		128FD5AB29336982008032DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 128FD5AA29336982008032DD /* Assets.xcassets */; };
 		128FD5AE29336982008032DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 128FD5AC29336982008032DD /* LaunchScreen.storyboard */; };
+		128FD5BB29336B03008032DD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5BA29336B03008032DD /* Model.swift */; };
+		128FD5BD29336B28008032DD /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5BC29336B28008032DD /* DataStore.swift */; };
+		128FD5BF2933833E008032DD /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5BE2933833E008032DD /* ContactsListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		128FD59E29336980008032DD /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		128FD5A129336980008032DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		128FD5A329336980008032DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		128FD5A529336980008032DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		128FD5A829336980008032DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		128FD5AA29336982008032DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		128FD5AD29336982008032DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		128FD5AF29336982008032DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		128FD5BA29336B03008032DD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		128FD5BC29336B28008032DD /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		128FD5BE2933833E008032DD /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		128FD5A029336980008032DD /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				128FD5A129336980008032DD /* AppDelegate.swift */,
-				128FD5A329336980008032DD /* SceneDelegate.swift */,
-				128FD5A529336980008032DD /* ViewController.swift */,
+				128FD5B529336996008032DD /* Delegates */,
+				128FD5B6293369AD008032DD /* Models */,
+				128FD5B929336AC8008032DD /* Services */,
+				128FD5B7293369B8008032DD /* ViewControllers */,
 				128FD5A729336980008032DD /* Main.storyboard */,
-				128FD5AA29336982008032DD /* Assets.xcassets */,
 				128FD5AC29336982008032DD /* LaunchScreen.storyboard */,
+				128FD5AA29336982008032DD /* Assets.xcassets */,
 				128FD5AF29336982008032DD /* Info.plist */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		128FD5B529336996008032DD /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				128FD5A129336980008032DD /* AppDelegate.swift */,
+				128FD5A329336980008032DD /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		128FD5B6293369AD008032DD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				128FD5BA29336B03008032DD /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		128FD5B7293369B8008032DD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				128FD5BE2933833E008032DD /* ContactsListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		128FD5B929336AC8008032DD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				128FD5BC29336B28008032DD /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				128FD5A629336980008032DD /* ViewController.swift in Sources */,
 				128FD5A229336980008032DD /* AppDelegate.swift in Sources */,
 				128FD5A429336980008032DD /* SceneDelegate.swift in Sources */,
+				128FD5BD29336B28008032DD /* DataStore.swift in Sources */,
+				128FD5BB29336B03008032DD /* Model.swift in Sources */,
+				128FD5BF2933833E008032DD /* ContactsListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +344,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +372,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
