@@ -15,6 +15,9 @@
 		128FD5BB29336B03008032DD /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5BA29336B03008032DD /* Model.swift */; };
 		128FD5BD29336B28008032DD /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5BC29336B28008032DD /* DataStore.swift */; };
 		128FD5BF2933833E008032DD /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5BE2933833E008032DD /* ContactsListViewController.swift */; };
+		128FD5C12933BF72008032DD /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5C02933BF72008032DD /* PersonDetailsViewController.swift */; };
+		128FD5C52933C753008032DD /* FullContactsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5C42933C753008032DD /* FullContactsListTableViewController.swift */; };
+		128FD5C72933D943008032DD /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5C62933D943008032DD /* TabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		128FD5BA29336B03008032DD /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		128FD5BC29336B28008032DD /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		128FD5BE2933833E008032DD /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
+		128FD5C02933BF72008032DD /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
+		128FD5C42933C753008032DD /* FullContactsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullContactsListTableViewController.swift; sourceTree = "<group>"; };
+		128FD5C62933D943008032DD /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +98,10 @@
 		128FD5B7293369B8008032DD /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				128FD5C62933D943008032DD /* TabBarViewController.swift */,
 				128FD5BE2933833E008032DD /* ContactsListViewController.swift */,
+				128FD5C02933BF72008032DD /* PersonDetailsViewController.swift */,
+				128FD5C42933C753008032DD /* FullContactsListTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -176,11 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				128FD5C72933D943008032DD /* TabBarViewController.swift in Sources */,
 				128FD5A229336980008032DD /* AppDelegate.swift in Sources */,
 				128FD5A429336980008032DD /* SceneDelegate.swift in Sources */,
+				128FD5C12933BF72008032DD /* PersonDetailsViewController.swift in Sources */,
 				128FD5BD29336B28008032DD /* DataStore.swift in Sources */,
 				128FD5BB29336B03008032DD /* Model.swift in Sources */,
 				128FD5BF2933833E008032DD /* ContactsListViewController.swift in Sources */,
+				128FD5C52933C753008032DD /* FullContactsListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
