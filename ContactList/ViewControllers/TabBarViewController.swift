@@ -21,6 +21,6 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
         guard let contactLTVC = navControllers[0].topViewController as? ContactsListViewController else { return }
         contactLTVC.contactList = contacts
         guard let fullContactLTVC = navControllers[1].topViewController as? FullContactsListTableViewController else { return }
-        fullContactLTVC.contactList = contactList
+        fullContactLTVC.contactList = contacts
     }
 }
