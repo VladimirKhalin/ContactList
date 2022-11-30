@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
+final class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
     let contacts = Person.getContacts()
     

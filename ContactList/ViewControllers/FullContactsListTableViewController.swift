@@ -7,15 +7,9 @@
 
 import UIKit
 
-class FullContactsListTableViewController: UITableViewController   {
+final class FullContactsListTableViewController: UITableViewController   {
     
     var contactList: [Person] = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    
     
     // MARK: - Table view data source
     
@@ -28,14 +22,23 @@ class FullContactsListTableViewController: UITableViewController   {
         return 1
     }
 
-   
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        contactList[section].fullName
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "fullContact", for: indexPath)
-
-  
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "fullContact", for: indexPath) as! FullContactTableViewCell
+        let currenContact = contactList[indexPath.section]
+        cell.phoneNumber.text = currenContact.telephoneNumber
+        cell.email.text = currenContact.email
         return cell
     }
 }
 
 
+// indexPath.row
+// indexPath.section

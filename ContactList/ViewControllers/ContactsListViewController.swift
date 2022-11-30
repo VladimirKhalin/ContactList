@@ -7,9 +7,7 @@
 
 import UIKit
 
-
-
-class ContactsListViewController: UITableViewController {
+final class ContactsListViewController: UITableViewController {
     
     var contactList: [Person] = []
 
