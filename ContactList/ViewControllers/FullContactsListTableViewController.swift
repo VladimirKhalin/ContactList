@@ -7,7 +7,7 @@
 
 import UIKit
 
-
+var contactList: [Person]!
 
 
 
@@ -103,10 +103,4 @@ class FullContactsListTableViewController: UITableViewController   {
 
 }
 
-extension FullContactsListTableViewController: ContactsListViewControllerDeligate {
-    func personsDeligate(_ persons: [Person]) {
-       print("Работает")
-       contactList = persons
-       // print(contactList as? [Person])
-    }
-}
+
