@@ -18,6 +18,7 @@
 		128FD5C12933BF72008032DD /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5C02933BF72008032DD /* PersonDetailsViewController.swift */; };
 		128FD5C52933C753008032DD /* FullContactsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5C42933C753008032DD /* FullContactsListTableViewController.swift */; };
 		128FD5C72933D943008032DD /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5C62933D943008032DD /* TabBarViewController.swift */; };
+		128FD5CB29376000008032DD /* FullContactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128FD5CA29376000008032DD /* FullContactTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		128FD5C02933BF72008032DD /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
 		128FD5C42933C753008032DD /* FullContactsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullContactsListTableViewController.swift; sourceTree = "<group>"; };
 		128FD5C62933D943008032DD /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		128FD5CA29376000008032DD /* FullContactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullContactTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				128FD5BE2933833E008032DD /* ContactsListViewController.swift */,
 				128FD5C02933BF72008032DD /* PersonDetailsViewController.swift */,
 				128FD5C42933C753008032DD /* FullContactsListTableViewController.swift */,
+				128FD5CA29376000008032DD /* FullContactTableViewCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				128FD5CB29376000008032DD /* FullContactTableViewCell.swift in Sources */,
 				128FD5C72933D943008032DD /* TabBarViewController.swift in Sources */,
 				128FD5A229336980008032DD /* AppDelegate.swift in Sources */,
 				128FD5A429336980008032DD /* SceneDelegate.swift in Sources */,
